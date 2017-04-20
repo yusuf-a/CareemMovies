@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8867D7011EA91D3B00619304 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8867D7001EA91D3B00619304 /* AppDelegate.swift */; };
+		8867D7031EA91D3B00619304 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8867D7021EA91D3B00619304 /* ViewController.swift */; };
+		8867D7061EA91D3B00619304 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8867D7041EA91D3B00619304 /* Main.storyboard */; };
+		8867D7081EA91D3B00619304 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8867D7071EA91D3B00619304 /* Assets.xcassets */; };
+		8867D70B1EA91D3B00619304 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8867D7091EA91D3B00619304 /* LaunchScreen.storyboard */; };
+		8867D7161EA91D3B00619304 /* CareemMoviesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8867D7151EA91D3B00619304 /* CareemMoviesTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8867D7121EA91D3B00619304 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8867D6F51EA91D3B00619304 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8867D6FC1EA91D3B00619304;
+			remoteInfo = CareemMovies;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8867D6FD1EA91D3B00619304 /* CareemMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CareemMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8867D7001EA91D3B00619304 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8867D7021EA91D3B00619304 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8867D7051EA91D3B00619304 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8867D7071EA91D3B00619304 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8867D70A1EA91D3B00619304 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8867D70C1EA91D3B00619304 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8867D7111EA91D3B00619304 /* CareemMoviesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CareemMoviesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8867D7151EA91D3B00619304 /* CareemMoviesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareemMoviesTests.swift; sourceTree = "<group>"; };
+		8867D7171EA91D3B00619304 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8867D6FA1EA91D3B00619304 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8867D70E1EA91D3B00619304 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8867D6F41EA91D3B00619304 = {
+			isa = PBXGroup;
+			children = (
+				8867D6FF1EA91D3B00619304 /* CareemMovies */,
+				8867D7141EA91D3B00619304 /* CareemMoviesTests */,
+				8867D6FE1EA91D3B00619304 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8867D6FE1EA91D3B00619304 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8867D6FD1EA91D3B00619304 /* CareemMovies.app */,
+				8867D7111EA91D3B00619304 /* CareemMoviesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8867D6FF1EA91D3B00619304 /* CareemMovies */ = {
+			isa = PBXGroup;
+			children = (
+				8867D7001EA91D3B00619304 /* AppDelegate.swift */,
+				8867D7021EA91D3B00619304 /* ViewController.swift */,
+				8867D7041EA91D3B00619304 /* Main.storyboard */,
+				8867D7071EA91D3B00619304 /* Assets.xcassets */,
+				8867D7091EA91D3B00619304 /* LaunchScreen.storyboard */,
+				8867D70C1EA91D3B00619304 /* Info.plist */,
+			);
+			path = CareemMovies;
+			sourceTree = "<group>";
+		};
+		8867D7141EA91D3B00619304 /* CareemMoviesTests */ = {
+			isa = PBXGroup;
+			children = (
+				8867D7151EA91D3B00619304 /* CareemMoviesTests.swift */,
+				8867D7171EA91D3B00619304 /* Info.plist */,
+			);
+			path = CareemMoviesTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8867D6FC1EA91D3B00619304 /* CareemMovies */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8867D71A1EA91D3B00619304 /* Build configuration list for PBXNativeTarget "CareemMovies" */;
+			buildPhases = (
+				8867D6F91EA91D3B00619304 /* Sources */,
+				8867D6FA1EA91D3B00619304 /* Frameworks */,
+				8867D6FB1EA91D3B00619304 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CareemMovies;
+			productName = CareemMovies;
+			productReference = 8867D6FD1EA91D3B00619304 /* CareemMovies.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8867D7101EA91D3B00619304 /* CareemMoviesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8867D71D1EA91D3B00619304 /* Build configuration list for PBXNativeTarget "CareemMoviesTests" */;
+			buildPhases = (
+				8867D70D1EA91D3B00619304 /* Sources */,
+				8867D70E1EA91D3B00619304 /* Frameworks */,
+				8867D70F1EA91D3B00619304 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8867D7131EA91D3B00619304 /* PBXTargetDependency */,
+			);
+			name = CareemMoviesTests;
+			productName = CareemMoviesTests;
+			productReference = 8867D7111EA91D3B00619304 /* CareemMoviesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8867D6F51EA91D3B00619304 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Yusuf;
+				TargetAttributes = {
+					8867D6FC1EA91D3B00619304 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 328NMJG8VD;
+						ProvisioningStyle = Automatic;
+					};
+					8867D7101EA91D3B00619304 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 328NMJG8VD;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8867D6FC1EA91D3B00619304;
+					};
+				};
+			};
+			buildConfigurationList = 8867D6F81EA91D3B00619304 /* Build configuration list for PBXProject "CareemMovies" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8867D6F41EA91D3B00619304;
+			productRefGroup = 8867D6FE1EA91D3B00619304 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8867D6FC1EA91D3B00619304 /* CareemMovies */,
+				8867D7101EA91D3B00619304 /* CareemMoviesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8867D6FB1EA91D3B00619304 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8867D70B1EA91D3B00619304 /* LaunchScreen.storyboard in Resources */,
+				8867D7081EA91D3B00619304 /* Assets.xcassets in Resources */,
+				8867D7061EA91D3B00619304 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8867D70F1EA91D3B00619304 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8867D6F91EA91D3B00619304 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8867D7031EA91D3B00619304 /* ViewController.swift in Sources */,
+				8867D7011EA91D3B00619304 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8867D70D1EA91D3B00619304 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8867D7161EA91D3B00619304 /* CareemMoviesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8867D7131EA91D3B00619304 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8867D6FC1EA91D3B00619304 /* CareemMovies */;
+			targetProxy = 8867D7121EA91D3B00619304 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8867D7041EA91D3B00619304 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8867D7051EA91D3B00619304 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8867D7091EA91D3B00619304 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8867D70A1EA91D3B00619304 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8867D7181EA91D3B00619304 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8867D7191EA91D3B00619304 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8867D71B1EA91D3B00619304 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 328NMJG8VD;
+				INFOPLIST_FILE = CareemMovies/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yusuf.CareemMovies;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		8867D71C1EA91D3B00619304 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 328NMJG8VD;
+				INFOPLIST_FILE = CareemMovies/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yusuf.CareemMovies;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		8867D71E1EA91D3B00619304 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 328NMJG8VD;
+				INFOPLIST_FILE = CareemMoviesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yusuf.CareemMoviesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CareemMovies.app/CareemMovies";
+			};
+			name = Debug;
+		};
+		8867D71F1EA91D3B00619304 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 328NMJG8VD;
+				INFOPLIST_FILE = CareemMoviesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yusuf.CareemMoviesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CareemMovies.app/CareemMovies";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8867D6F81EA91D3B00619304 /* Build configuration list for PBXProject "CareemMovies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8867D7181EA91D3B00619304 /* Debug */,
+				8867D7191EA91D3B00619304 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8867D71A1EA91D3B00619304 /* Build configuration list for PBXNativeTarget "CareemMovies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8867D71B1EA91D3B00619304 /* Debug */,
+				8867D71C1EA91D3B00619304 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8867D71D1EA91D3B00619304 /* Build configuration list for PBXNativeTarget "CareemMoviesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8867D71E1EA91D3B00619304 /* Debug */,
+				8867D71F1EA91D3B00619304 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8867D6F51EA91D3B00619304 /* Project object */;
+}
