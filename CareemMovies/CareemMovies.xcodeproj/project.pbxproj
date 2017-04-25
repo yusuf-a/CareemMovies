@@ -17,6 +17,9 @@
 		88ED3B391EAFD1ED00391075 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ED3B381EAFD1ED00391075 /* Movie.swift */; };
 		88ED3B3D1EAFDE2400391075 /* MovieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ED3B3C1EAFDE2400391075 /* MovieTests.swift */; };
 		88ED3B401EAFDEA800391075 /* Movie.json in Resources */ = {isa = PBXBuildFile; fileRef = 88ED3B3F1EAFDEA800391075 /* Movie.json */; };
+		88ED3B421EAFE13900391075 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ED3B411EAFE13900391075 /* Movies.swift */; };
+		88ED3B441EAFE28D00391075 /* MoviesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ED3B431EAFE28D00391075 /* MoviesTests.swift */; };
+		88ED3B461EAFE2A500391075 /* Movies.json in Resources */ = {isa = PBXBuildFile; fileRef = 88ED3B451EAFE2A500391075 /* Movies.json */; };
 		B45D4AFA5B0BBEF3169D49CA /* Pods_CareemMovies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C67F1B8B227E2B39C8944B2 /* Pods_CareemMovies.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +51,9 @@
 		88ED3B381EAFD1ED00391075 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		88ED3B3C1EAFDE2400391075 /* MovieTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTests.swift; sourceTree = "<group>"; };
 		88ED3B3F1EAFDEA800391075 /* Movie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Movie.json; sourceTree = "<group>"; };
+		88ED3B411EAFE13900391075 /* Movies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
+		88ED3B431EAFE28D00391075 /* MoviesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesTests.swift; sourceTree = "<group>"; };
+		88ED3B451EAFE2A500391075 /* Movies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Movies.json; sourceTree = "<group>"; };
 		BCA29C356277DFCCD8180789 /* Pods-CareemMovies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareemMovies.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CareemMovies/Pods-CareemMovies.debug.xcconfig"; sourceTree = "<group>"; };
 		CFAA2461CD99C58E9BFF6016 /* Pods-CareemMovies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareemMovies.release.xcconfig"; path = "Pods/Target Support Files/Pods-CareemMovies/Pods-CareemMovies.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				88ED3B381EAFD1ED00391075 /* Movie.swift */,
+				88ED3B411EAFE13900391075 /* Movies.swift */,
 			);
 			name = Entities;
 			sourceTree = "<group>";
@@ -148,6 +155,7 @@
 			children = (
 				88ED3B3E1EAFDE9100391075 /* JSON */,
 				88ED3B3C1EAFDE2400391075 /* MovieTests.swift */,
+				88ED3B431EAFE28D00391075 /* MoviesTests.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -156,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				88ED3B3F1EAFDEA800391075 /* Movie.json */,
+				88ED3B451EAFE2A500391075 /* Movies.json */,
 			);
 			name = JSON;
 			sourceTree = "<group>";
@@ -270,6 +279,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88ED3B461EAFE2A500391075 /* Movies.json in Resources */,
 				88ED3B401EAFDEA800391075 /* Movie.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,6 +386,7 @@
 			files = (
 				8867D7031EA91D3B00619304 /* ViewController.swift in Sources */,
 				8867D7011EA91D3B00619304 /* AppDelegate.swift in Sources */,
+				88ED3B421EAFE13900391075 /* Movies.swift in Sources */,
 				88ED3B391EAFD1ED00391075 /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,6 +396,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88ED3B3D1EAFDE2400391075 /* MovieTests.swift in Sources */,
+				88ED3B441EAFE28D00391075 /* MoviesTests.swift in Sources */,
 				8867D7161EA91D3B00619304 /* CareemMoviesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
