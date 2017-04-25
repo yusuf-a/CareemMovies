@@ -1,0 +1,6 @@
+framework module Pods_CareemMoviesTests {
+  umbrella header "Pods-CareemMoviesTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

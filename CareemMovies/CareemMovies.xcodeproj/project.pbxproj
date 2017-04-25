@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		085349921398D24F96539242 /* Pods_CareemMoviesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 532AEBBBFAC54FE1A967038F /* Pods_CareemMoviesTests.framework */; };
 		8867D7011EA91D3B00619304 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8867D7001EA91D3B00619304 /* AppDelegate.swift */; };
 		8867D7031EA91D3B00619304 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8867D7021EA91D3B00619304 /* ViewController.swift */; };
 		8867D7061EA91D3B00619304 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8867D7041EA91D3B00619304 /* Main.storyboard */; };
 		8867D7081EA91D3B00619304 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8867D7071EA91D3B00619304 /* Assets.xcassets */; };
 		8867D70B1EA91D3B00619304 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8867D7091EA91D3B00619304 /* LaunchScreen.storyboard */; };
 		8867D7161EA91D3B00619304 /* CareemMoviesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8867D7151EA91D3B00619304 /* CareemMoviesTests.swift */; };
+		88ED3B391EAFD1ED00391075 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ED3B381EAFD1ED00391075 /* Movie.swift */; };
+		88ED3B3D1EAFDE2400391075 /* MovieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ED3B3C1EAFDE2400391075 /* MovieTests.swift */; };
+		88ED3B401EAFDEA800391075 /* Movie.json in Resources */ = {isa = PBXBuildFile; fileRef = 88ED3B3F1EAFDEA800391075 /* Movie.json */; };
+		B45D4AFA5B0BBEF3169D49CA /* Pods_CareemMovies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C67F1B8B227E2B39C8944B2 /* Pods_CareemMovies.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +31,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C67F1B8B227E2B39C8944B2 /* Pods_CareemMovies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CareemMovies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B3BAE77E81D612F745B7CD9 /* Pods-CareemMoviesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareemMoviesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CareemMoviesTests/Pods-CareemMoviesTests.release.xcconfig"; sourceTree = "<group>"; };
+		532AEBBBFAC54FE1A967038F /* Pods_CareemMoviesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CareemMoviesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A987490B2464E6E2ED1F7EF /* Pods-CareemMoviesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareemMoviesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CareemMoviesTests/Pods-CareemMoviesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8867D6FD1EA91D3B00619304 /* CareemMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CareemMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8867D7001EA91D3B00619304 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8867D7021EA91D3B00619304 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +45,11 @@
 		8867D7111EA91D3B00619304 /* CareemMoviesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CareemMoviesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8867D7151EA91D3B00619304 /* CareemMoviesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareemMoviesTests.swift; sourceTree = "<group>"; };
 		8867D7171EA91D3B00619304 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88ED3B381EAFD1ED00391075 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		88ED3B3C1EAFDE2400391075 /* MovieTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTests.swift; sourceTree = "<group>"; };
+		88ED3B3F1EAFDEA800391075 /* Movie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Movie.json; sourceTree = "<group>"; };
+		BCA29C356277DFCCD8180789 /* Pods-CareemMovies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareemMovies.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CareemMovies/Pods-CareemMovies.debug.xcconfig"; sourceTree = "<group>"; };
+		CFAA2461CD99C58E9BFF6016 /* Pods-CareemMovies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareemMovies.release.xcconfig"; path = "Pods/Target Support Files/Pods-CareemMovies/Pods-CareemMovies.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B45D4AFA5B0BBEF3169D49CA /* Pods_CareemMovies.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +65,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				085349921398D24F96539242 /* Pods_CareemMoviesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6EBBABA9C70390EE241EF30B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BCA29C356277DFCCD8180789 /* Pods-CareemMovies.debug.xcconfig */,
+				CFAA2461CD99C58E9BFF6016 /* Pods-CareemMovies.release.xcconfig */,
+				7A987490B2464E6E2ED1F7EF /* Pods-CareemMoviesTests.debug.xcconfig */,
+				4B3BAE77E81D612F745B7CD9 /* Pods-CareemMoviesTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8867D6F41EA91D3B00619304 = {
 			isa = PBXGroup;
 			children = (
 				8867D6FF1EA91D3B00619304 /* CareemMovies */,
 				8867D7141EA91D3B00619304 /* CareemMoviesTests */,
 				8867D6FE1EA91D3B00619304 /* Products */,
+				6EBBABA9C70390EE241EF30B /* Pods */,
+				C2E805A83D25B23BDB31B3D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +106,7 @@
 		8867D6FF1EA91D3B00619304 /* CareemMovies */ = {
 			isa = PBXGroup;
 			children = (
+				88ED3B371EAFD17500391075 /* API */,
 				8867D7001EA91D3B00619304 /* AppDelegate.swift */,
 				8867D7021EA91D3B00619304 /* ViewController.swift */,
 				8867D7041EA91D3B00619304 /* Main.storyboard */,
@@ -90,10 +120,53 @@
 		8867D7141EA91D3B00619304 /* CareemMoviesTests */ = {
 			isa = PBXGroup;
 			children = (
+				88ED3B3B1EAFDE0D00391075 /* API */,
 				8867D7151EA91D3B00619304 /* CareemMoviesTests.swift */,
 				8867D7171EA91D3B00619304 /* Info.plist */,
 			);
 			path = CareemMoviesTests;
+			sourceTree = "<group>";
+		};
+		88ED3B371EAFD17500391075 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				88ED3B3A1EAFD1F300391075 /* Entities */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		88ED3B3A1EAFD1F300391075 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				88ED3B381EAFD1ED00391075 /* Movie.swift */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		88ED3B3B1EAFDE0D00391075 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				88ED3B3E1EAFDE9100391075 /* JSON */,
+				88ED3B3C1EAFDE2400391075 /* MovieTests.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		88ED3B3E1EAFDE9100391075 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				88ED3B3F1EAFDEA800391075 /* Movie.json */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+		C2E805A83D25B23BDB31B3D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C67F1B8B227E2B39C8944B2 /* Pods_CareemMovies.framework */,
+				532AEBBBFAC54FE1A967038F /* Pods_CareemMoviesTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,9 +176,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8867D71A1EA91D3B00619304 /* Build configuration list for PBXNativeTarget "CareemMovies" */;
 			buildPhases = (
+				1DDAE5D969290A356E7A3126 /* [CP] Check Pods Manifest.lock */,
 				8867D6F91EA91D3B00619304 /* Sources */,
 				8867D6FA1EA91D3B00619304 /* Frameworks */,
 				8867D6FB1EA91D3B00619304 /* Resources */,
+				D9AEACE6A1412E0B27432E12 /* [CP] Embed Pods Frameworks */,
+				3BB4F149062C91AA070DA298 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +196,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8867D71D1EA91D3B00619304 /* Build configuration list for PBXNativeTarget "CareemMoviesTests" */;
 			buildPhases = (
+				6B87E6B2BDD9BDB24B29119B /* [CP] Check Pods Manifest.lock */,
 				8867D70D1EA91D3B00619304 /* Sources */,
 				8867D70E1EA91D3B00619304 /* Frameworks */,
 				8867D70F1EA91D3B00619304 /* Resources */,
+				590B5FAC3C7D85900384BFDD /* [CP] Embed Pods Frameworks */,
+				CC3E7B6E5AEF06E83E9920F0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,10 +270,104 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88ED3B401EAFDEA800391075 /* Movie.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1DDAE5D969290A356E7A3126 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3BB4F149062C91AA070DA298 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CareemMovies/Pods-CareemMovies-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		590B5FAC3C7D85900384BFDD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CareemMoviesTests/Pods-CareemMoviesTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B87E6B2BDD9BDB24B29119B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CC3E7B6E5AEF06E83E9920F0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CareemMoviesTests/Pods-CareemMoviesTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9AEACE6A1412E0B27432E12 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CareemMovies/Pods-CareemMovies-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8867D6F91EA91D3B00619304 /* Sources */ = {
@@ -203,6 +376,7 @@
 			files = (
 				8867D7031EA91D3B00619304 /* ViewController.swift in Sources */,
 				8867D7011EA91D3B00619304 /* AppDelegate.swift in Sources */,
+				88ED3B391EAFD1ED00391075 /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88ED3B3D1EAFDE2400391075 /* MovieTests.swift in Sources */,
 				8867D7161EA91D3B00619304 /* CareemMoviesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +514,7 @@
 		};
 		8867D71B1EA91D3B00619304 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCA29C356277DFCCD8180789 /* Pods-CareemMovies.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 328NMJG8VD;
@@ -352,6 +528,7 @@
 		};
 		8867D71C1EA91D3B00619304 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFAA2461CD99C58E9BFF6016 /* Pods-CareemMovies.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 328NMJG8VD;
@@ -365,6 +542,7 @@
 		};
 		8867D71E1EA91D3B00619304 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A987490B2464E6E2ED1F7EF /* Pods-CareemMoviesTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -380,6 +558,7 @@
 		};
 		8867D71F1EA91D3B00619304 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B3BAE77E81D612F745B7CD9 /* Pods-CareemMoviesTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -412,6 +591,7 @@
 				8867D71C1EA91D3B00619304 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8867D71D1EA91D3B00619304 /* Build configuration list for PBXNativeTarget "CareemMoviesTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +600,7 @@
 				8867D71F1EA91D3B00619304 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
