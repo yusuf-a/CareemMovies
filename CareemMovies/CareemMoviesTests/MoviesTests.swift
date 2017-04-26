@@ -17,7 +17,7 @@ class ResultsTests: XCTestCase {
     override func setUp() {
         super.setUp()
 		
-		let url = Bundle(for: CareemMoviesTests.self).url(forResource: "Movies", withExtension: "json")!
+		let url = Bundle(for: ResultsTests.self).url(forResource: "Movies", withExtension: "json")!
 		let data = try! Data(contentsOf: url)
 		let json = try! JSONSerialization.jsonObject(with: data, options: []) as! [String:Any]
 		
