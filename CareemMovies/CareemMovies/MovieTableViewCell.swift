@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class MovieTableViewCell: UITableViewCell {
 	
@@ -21,6 +22,9 @@ class MovieTableViewCell: UITableViewCell {
 		overviewLabel.text = viewModel.overview
 		releaseDateLabel.text = viewModel.releaseDate
 		
+		if let imageURL = viewModel.imageUrl {
 		
+			posterImageView.kf.setImage(with: URL(string: imageURL))
+		}
 	}
 }
