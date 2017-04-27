@@ -1,12 +1,15 @@
 PODS:
   - Gloss (1.2.4)
+  - Kingfisher (3.6.2)
 
 DEPENDENCIES:
   - Gloss (~> 1.2)
+  - Kingfisher (~> 3.0)
 
 SPEC CHECKSUMS:
   Gloss: 4e036074610fdb993abcb958ebcd7332588e2333
+  Kingfisher: 2c94e72c6830622c71d06adf4ea024c37d316830
 
-PODFILE CHECKSUM: 5f7353fbf5c933cab3c7bcb24cb2e993107cdca4
+PODFILE CHECKSUM: 90a593eb26e38b23eefaaa0a2356339a47eedfcb
 
 COCOAPODS: 1.2.0
