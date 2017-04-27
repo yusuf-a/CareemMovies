@@ -10,7 +10,7 @@ import Foundation
 
 protocol URLRequestFactory {
 
-	
+	func makeURLRequest(withPath path: String, httpParams: [[String: String]]) -> URLRequest?
 }
 
 enum FindingDataType: String {

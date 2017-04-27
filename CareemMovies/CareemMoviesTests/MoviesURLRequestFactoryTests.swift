@@ -10,7 +10,7 @@ import XCTest
 
 @testable import CareemMovies
 
-class MoviesURLRequestFactory: XCTestCase {
+class MoviesURLRequestFactoryTests: XCTestCase {
 	
 	var urlRequestFactory: DefaultURLRequestFactory!
     
@@ -39,5 +39,12 @@ class MoviesURLRequestFactory: XCTestCase {
 		let urlRequestFactoryURL = urlRequestFactory.makeURLRequest(withPath: "search/movie", httpParams: httpParams)
 		
 		XCTAssertEqual(urlRequest, urlRequestFactoryURL)
+	}
+	
+	func testURLRequestFactory_ReturnsNil_InvalidPath() {
+		
+		let urlRequestFactoryUrl = urlRequestFactory.makeURLRequest(withPath: "<", httpParams: [["key": "value"]])
+		
+		XCTAssertNil(urlRequestFactoryUrl)
 	}
 }
