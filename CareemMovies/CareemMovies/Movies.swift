@@ -12,7 +12,7 @@ struct Movies: Decodable {
 	
 	let results: [Movie]?
 	
-	init(json: JSON) {
+	init?(json: JSON) {
 		
 		self.results = "results" <~~ json
 	}
