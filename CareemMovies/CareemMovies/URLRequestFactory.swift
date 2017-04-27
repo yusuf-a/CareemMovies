@@ -22,7 +22,7 @@ enum FindingDataType: String {
 
 enum ContentType: String {
 	
-	case movies = "movies"
+	case movies = "movie"
 	case tv = "tv"
 }
 

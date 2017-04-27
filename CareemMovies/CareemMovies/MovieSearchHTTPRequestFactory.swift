@@ -33,7 +33,9 @@ class MovieSearchHTTPRequestFactory: HTTPRequestFactory {
 		
 		let httpParams = [SearchHTTPParameterKeys.query: movie]
 		
-		guard let url = urlRequestFactory.makeURLRequest(withPath: FindingDataType.search.rawValue, httpParams: [httpParams])?.url else {
+		let path = "\(FindingDataType.search.rawValue)/\(ContentType.movies.rawValue)"
+		
+		guard let url = urlRequestFactory.makeURLRequest(withPath: path, httpParams: [httpParams])?.url else {
 			
 			throw URLError.cannotFormURLRequest
 		}
