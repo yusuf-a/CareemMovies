@@ -8,5 +8,5 @@
 
 import Foundation
 
-typealias MoviesSearchSuccessBlock = (_ movies: Movies) -> Void
+typealias MoviesSearchSuccessBlock = (_ movies: [MovieViewModel]) -> Void
 typealias ErrorCallback = (_ error: Error) -> Void
