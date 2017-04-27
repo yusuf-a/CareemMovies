@@ -34,7 +34,7 @@ class MoviesURLRequestFactoryTests: XCTestCase {
 		
 		let urlRequest = URLRequest(url: expectedURL!)
 		
-		let httpParams = [[Strings.apiKeyKey: Strings.apiKeyValue], ["query": "batman"]]
+		let httpParams = [["query": "batman"]]
 		
 		let urlRequestFactoryURL = urlRequestFactory.makeURLRequest(withPath: "search/movie", httpParams: httpParams)
 		

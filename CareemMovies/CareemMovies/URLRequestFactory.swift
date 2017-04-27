@@ -46,7 +46,10 @@ class DefaultURLRequestFactory: URLRequestFactory {
 		
 		var urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: true)
 		
-		let queryItems = generateQueryItems(fromDictionary: httpParams)
+		let apiKeyHTTPParam = [[Strings.apiKeyKey: Strings.apiKeyValue]]
+		let allhttpParams = apiKeyHTTPParam + httpParams
+		
+		let queryItems = generateQueryItems(fromDictionary: allhttpParams)
 		
 		urlComponents?.queryItems = queryItems
 		
