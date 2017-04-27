@@ -10,13 +10,13 @@ import Foundation
 
 @testable import CareemMovies
 
-class MockURLRequestFactory: DefaultURLRequestFactory {
+enum State {
 	
-	enum State {
-		
-		case success
-		case fail
-	}
+	case success
+	case fail
+}
+
+class MockURLRequestFactory: DefaultURLRequestFactory {
 	
 	var state: State = .success
 	
