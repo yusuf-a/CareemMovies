@@ -15,7 +15,7 @@ class HTTPService {
 	
 	let urlSession: URLSession
 	
-	init(urlSession: URLSession) {
+	init(urlSession: URLSession = URLSession.shared) {
 		
 		self.urlSession = urlSession
 	}
@@ -23,7 +23,7 @@ class HTTPService {
 	func performDataTask(with request: URLRequest, successCallback: APICallbackSuccess?, errorCallback: APIErrorCallback?) ->
 		URLSessionDataTask {
 			
-			let dataTask = urlSession.dataTask(with: request, completionHandler: { (data, response, error) in
+			let dataTask = urlSession.dataTask(with: request) { (data, response, error) in
 				
 				if let error = error, let errorCallback = errorCallback, let response = response as? HTTPURLResponse {
 					
@@ -36,7 +36,7 @@ class HTTPService {
 						successCallback(self.serialize(response: data))
 					}
 				}
-			})
+			}
 			
 			dataTask.resume()
 			
