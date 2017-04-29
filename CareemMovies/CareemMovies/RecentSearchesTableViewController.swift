@@ -28,7 +28,7 @@ class RecentSearchesTableViewController: UITableViewController {
 
         let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
 
-        cell.textLabel!.text = "HEHEHEHE"
+        cell.textLabel!.text = "Recent Search"
         cell.backgroundColor = .red
 
         return cell
