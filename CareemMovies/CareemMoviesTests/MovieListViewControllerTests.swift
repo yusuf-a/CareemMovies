@@ -33,6 +33,12 @@ class MovieListViewControllerTests: XCTestCase {
 
         let _ = movieListViewController.view
     }
+	
+	override func tearDown() {
+		
+		movieListViewController = nil
+		super.tearDown()
+	}
 
     func test_numberOfRowsInSection_ReturnsMovieViewModelCount() {
 
@@ -45,4 +51,53 @@ class MovieListViewControllerTests: XCTestCase {
 
         XCTAssert(cell is MovieTableViewCell)
     }
+	
+	// MARK: - viewDidLoad
+	
+	func test_viewDidLoad_searchController_resultsViewController_is_RecentSearchesTableViewController() {
+		
+		movieListViewController.viewDidLoad()
+		
+		XCTAssert(movieListViewController.searchController?.searchResultsController is RecentSearchesTableViewController)
+	}
+	
+	func test_viewDidLoad_tableHeaderView_is_searchControllerSearchBar() {
+		
+		movieListViewController.viewDidLoad()
+		
+		XCTAssertEqual(movieListViewController.tableView.tableHeaderView!, movieListViewController.searchController?.searchBar)
+	}
+	
+	func test_viewDidLoad_searchControllerDelegate_isMovieListViewController() {
+		
+		movieListViewController.viewDidLoad()
+		
+		XCTAssert(movieListViewController.searchController?.delegate === movieListViewController)
+	}
+	
+	func test_viewDidLoad_movieListViewController_definesPresentationContext_true() {
+		
+		movieListViewController.viewDidLoad()
+		XCTAssertTrue(movieListViewController.definesPresentationContext)
+	}
+	
+	func test_viewDidLoad_tableView_rowHeight_is_UITableViewAutomaticDimension() {
+		
+		movieListViewController.viewDidLoad()
+		XCTAssertEqual(movieListViewController.tableView.rowHeight, UITableViewAutomaticDimension)
+	}
+	
+	func test_viewDidLoad_tableView_rowHeight_estimatedRowHeight_is_100() {
+		
+		movieListViewController.viewDidLoad()
+		XCTAssertEqual(movieListViewController.tableView.estimatedRowHeight, 100)
+	}
+	
+	// MARK: - UISearchControllerDelegate
+	
+	func test_didPresentSearchController_searchController_viewNotHidden() {
+		
+		movieListViewController.didPresentSearchController(movieListViewController.searchController!)
+		XCTAssertFalse(movieListViewController.searchController!.view.isHidden)
+	}
 }
