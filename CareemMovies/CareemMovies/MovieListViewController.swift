@@ -11,9 +11,13 @@ import UIKit
 class MovieListViewController: UITableViewController {
 
     var movieViewModels = [MovieViewModel]()
-    var movieSearchService: MoviesSearchService?
+    var movieSearchService: MoviesSearchService = MoviesSearchService()
 
     var searchController: UISearchController?
+	
+	var currentSearchTerm = ""
+	
+	var recentSearchesManager = RecentSearchesManager()
 
     override func viewDidLoad() {
 
@@ -21,7 +25,6 @@ class MovieListViewController: UITableViewController {
 		
 		setUpSearchController()
 		setUpTableView()
-		getMovies_Test(movie: "batman")
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -46,9 +49,11 @@ class MovieListViewController: UITableViewController {
 	
 	private func setUpSearchController() {
 		
-		searchController = UISearchController(searchResultsController: RecentSearchesTableViewController())
+		let recentSearchesTableViewController = RecentSearchesTableViewController()
+		searchController = UISearchController(searchResultsController: recentSearchesTableViewController)
 		searchController?.searchBar.sizeToFit()
 		tableView.tableHeaderView = searchController?.searchBar
+		recentSearchesTableViewController.delegate = self
 		searchController?.searchBar.delegate = self
 		searchController?.delegate = self
 		searchController?.searchResultsUpdater = self
@@ -61,30 +66,47 @@ class MovieListViewController: UITableViewController {
 		tableView.estimatedRowHeight = 100
 	}
 	
-	internal func getMovies_Test(movie: String) {
+	internal func getMovies(for searchTerm: String) {
 		
-		movieSearchService = MoviesSearchService()
-		try! movieSearchService?.search(forMovie: movie, successCallback: { (viewmodels) in
+		currentSearchTerm = searchTerm
+		
+		do {
 			
-			self.movieViewModels = viewmodels
-			
-			DispatchQueue.main.async {
+			try movieSearchService.search(forMovie: searchTerm, successCallback: { (viewmodels) in
 				
-				self.updateViews()
-			}
-		}, errorCallback: { (error) in
+				self.movieViewModels = viewmodels
+				
+				DispatchQueue.main.async {
+					
+					self.tableView.reloadData()
+					self.handleResults()
+				}
+			}, errorCallback: { (_) in
+				
+				self.showErrorAlert()
+			})
 			
-			self.showAlertView(withTitle: "Uh oh! An error occurred", message: "Please try again later")
-		})
+		} catch {
+			
+			showErrorAlert()
+		}
 	}
 	
-	private func updateViews() {
+	private func showErrorAlert() {
+		
+		showAlertView(withTitle: "Uh oh! An error occurred", message: "Please try again later")
+	}
+	
+	private func handleResults() {
 		
 		tableView.reloadData()
 		
 		if movieViewModels.isEmpty {
 			
 			showAlertView(withTitle: "Uh oh! No results", message: "Please search again with a different movie")
+		} else {
+			
+			recentSearchesManager.addRecentSearch(withSearchterm: currentSearchTerm)
 		}
 	}
 	
@@ -114,7 +136,7 @@ extension MovieListViewController: UISearchBarDelegate {
 		
 		if let searchTerm = searchBar.text {
 
-			getMovies_Test(movie: searchTerm)
+			getMovies(for: searchTerm)
 		}
 	}
 }
@@ -132,5 +154,13 @@ extension MovieListViewController: UISearchResultsUpdating {
 			
 			searchController.searchResultsController?.view.isHidden = false
 		}
+	}
+}
+
+extension MovieListViewController: RecentSearchesTableViewControllerDelegate {
+	
+	func didSelectSearchTerm(_ searchTerm: String) {
+		
+		getMovies(for: searchTerm)
 	}
 }

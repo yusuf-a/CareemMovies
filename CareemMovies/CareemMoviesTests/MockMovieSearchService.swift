@@ -15,6 +15,8 @@ class MockMoviesSearchService: MoviesSearchService {
     var searchWasCalledWithSearchTerm: String? = nil
 
     override func search(forMovie movie: String, successCallback: @escaping MoviesSearchSuccessBlock, errorCallback: @escaping ErrorCallback) throws {
+		
+		successCallback([MovieViewModel(imageUrl: "imageURL", title: "title", overview: "overview", releaseDate: "releaseDate")])
 
         searchWasCalledWithSearchTerm = movie
     }

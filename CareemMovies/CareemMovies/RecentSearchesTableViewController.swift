@@ -16,11 +16,16 @@ protocol RecentSearchesTableViewControllerDelegate {
 class RecentSearchesTableViewController: UITableViewController {
 
     var delegate: RecentSearchesTableViewControllerDelegate?
+	var recentSearchesManager = RecentSearchesManager()
+	var recentSearches = [RecentSearchViewModel]()
 
-    override func viewDidLoad() {
-
-        super.viewDidLoad()
-    }
+	override func viewDidAppear(_ animated: Bool) {
+		
+		super.viewDidAppear(animated)
+		
+		recentSearches = recentSearchesManager.fetchRecentSearches()
+		tableView.reloadData()
+	}
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
@@ -28,8 +33,7 @@ class RecentSearchesTableViewController: UITableViewController {
 
         let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
 
-        cell.textLabel!.text = "Recent Search"
-        cell.backgroundColor = .red
+        cell.textLabel?.text = recentSearches[indexPath.row].searchTerm
 
         return cell
     }
@@ -38,6 +42,17 @@ class RecentSearchesTableViewController: UITableViewController {
 
         super.tableView(tableView, numberOfRowsInSection: section)
 
-        return 5
+        return recentSearches.count
     }
+	
+	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		
+		tableView.deselectRow(at: indexPath, animated: true)
+		
+		let recentSearch = recentSearches[indexPath.row]
+		
+		delegate?.didSelectSearchTerm(recentSearch.searchTerm)
+		
+		dismiss(animated: true, completion: nil)
+	}
 }

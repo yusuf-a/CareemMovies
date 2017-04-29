@@ -15,15 +15,19 @@ class MovieListViewControllerTests: XCTestCase {
     var movieListViewController: MovieListViewController!
     var mockMovieViewModels: [MovieViewModel]!
     var mockService: MockMoviesSearchService!
+	var mockRecentSearchManager: MockRecentSearchManager!
     
     override func setUp() {
         super.setUp()
 
         mockService = MockMoviesSearchService(moviesSearchHTTPRequestFactory: MovieSearchHTTPRequestFactory(urlRequestFactory: MockURLRequestFactory()), httpService: MockHTTPService(urlSession: MockUrlSession()))
+		
+		mockRecentSearchManager = MockRecentSearchManager()
 
         movieListViewController = (UIStoryboard(name: "Main", bundle: .main).instantiateInitialViewController() as! UINavigationController).viewControllers.first as! MovieListViewController
 
         movieListViewController.movieSearchService = mockService
+		movieListViewController.recentSearchesManager = mockRecentSearchManager
 
         let mockMovieViewModel = MovieViewModel(imageUrl: nil, title: nil, overview: nil, releaseDate: nil)
 
@@ -105,5 +109,21 @@ class MovieListViewControllerTests: XCTestCase {
 		
 	movieListViewController.didPresentSearchController(movieListViewController.searchController!)
 		XCTAssertFalse(movieListViewController.searchController!.view.isHidden)
+	}
+	
+	// MARK: - getMovies
+	
+	func test_getMovies_setsCurrentSearchTerm() {
+		
+		movieListViewController.getMovies(for: "Batman")
+		
+		XCTAssertEqual(movieListViewController.currentSearchTerm, "Batman")
+	}
+	
+	func test_getMovies_successCallback_setsMovieViewModels() {
+		
+		movieListViewController.getMovies(for: "Batman")
+		
+		XCTAssertEqual(movieListViewController.movieViewModels, [MovieViewModel(imageUrl: "imageURL", title: "title", overview: "overview", releaseDate: "releaseDate")])
 	}
 }

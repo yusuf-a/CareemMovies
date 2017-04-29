@@ -16,3 +16,11 @@ struct MovieViewModel {
 	let overview: String?
 	let releaseDate: String?
 }
+
+extension MovieViewModel: Equatable {
+	
+	static func == (lhs: MovieViewModel, rhs: MovieViewModel) -> Bool {
+		
+		return lhs.imageUrl == rhs.imageUrl && lhs.title == rhs.title && lhs.overview == rhs.overview && lhs.releaseDate == rhs.releaseDate
+	}
+}
