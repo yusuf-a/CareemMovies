@@ -8,14 +8,14 @@
 
 import UIKit
 
-protocol RecentSearchesTableViewControllerDelegate {
+protocol RecentSearchesTableViewControllerDelegate: class {
 
     func didSelectSearchTerm(_ searchTerm: String)
 }
 
 class RecentSearchesTableViewController: UITableViewController {
 
-    var delegate: RecentSearchesTableViewControllerDelegate?
+    weak var delegate: RecentSearchesTableViewControllerDelegate?
 	var recentSearchesManager = RecentSearchesManager()
 	var recentSearches = [RecentSearchViewModel]()
 
