@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		085349921398D24F96539242 /* Pods_CareemMoviesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 532AEBBBFAC54FE1A967038F /* Pods_CareemMoviesTests.framework */; };
 		8867D7011EA91D3B00619304 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8867D7001EA91D3B00619304 /* AppDelegate.swift */; };
-		8867D7031EA91D3B00619304 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8867D7021EA91D3B00619304 /* ViewController.swift */; };
 		8867D7061EA91D3B00619304 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8867D7041EA91D3B00619304 /* Main.storyboard */; };
 		8867D7081EA91D3B00619304 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8867D7071EA91D3B00619304 /* Assets.xcassets */; };
 		8867D70B1EA91D3B00619304 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8867D7091EA91D3B00619304 /* LaunchScreen.storyboard */; };
@@ -67,7 +66,6 @@
 		7A987490B2464E6E2ED1F7EF /* Pods-CareemMoviesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareemMoviesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CareemMoviesTests/Pods-CareemMoviesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8867D6FD1EA91D3B00619304 /* CareemMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CareemMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8867D7001EA91D3B00619304 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8867D7021EA91D3B00619304 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8867D7051EA91D3B00619304 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8867D7071EA91D3B00619304 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8867D70A1EA91D3B00619304 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -174,7 +172,6 @@
 				88ED3B471EAFE50F00391075 /* HTTPService */,
 				88ED3B371EAFD17500391075 /* API */,
 				8867D7001EA91D3B00619304 /* AppDelegate.swift */,
-				8867D7021EA91D3B00619304 /* ViewController.swift */,
 				8867D7041EA91D3B00619304 /* Main.storyboard */,
 				8867D7071EA91D3B00619304 /* Assets.xcassets */,
 				8867D7091EA91D3B00619304 /* LaunchScreen.storyboard */,
@@ -604,7 +601,6 @@
 				88D326741EB4A65A008D3E68 /* RecentSearchesManager.swift in Sources */,
 				88ED3B491EAFE52800391075 /* HTTPService.swift in Sources */,
 				88D3265F1EB2A52D008D3E68 /* MovieViewModel.swift in Sources */,
-				8867D7031EA91D3B00619304 /* ViewController.swift in Sources */,
 				E81B152D1EB33FA9009D4FC8 /* MovieListViewController.swift in Sources */,
 				88727AE71EB2848C00CFDF80 /* MovieSearchHTTPRequestFactory.swift in Sources */,
 				8867D7011EA91D3B00619304 /* AppDelegate.swift in Sources */,
