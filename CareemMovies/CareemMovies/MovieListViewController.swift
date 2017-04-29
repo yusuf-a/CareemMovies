@@ -8,36 +8,20 @@
 
 import UIKit
 
-class MovieListViewController: UITableViewController, UISearchControllerDelegate {
+class MovieListViewController: UITableViewController {
 
     var movieViewModels = [MovieViewModel]()
     var movieSearchService: MoviesSearchService?
 
-    var searchController: UISearchController!
+    var searchController: UISearchController?
 
     override func viewDidLoad() {
 
         super.viewDidLoad()
-
-        searchController = UISearchController(searchResultsController: RecentSearchesTableViewController())
-        searchController.searchBar.sizeToFit()
-        tableView.tableHeaderView = searchController.searchBar
-        searchController.delegate = self
-        definesPresentationContext = true
-
-        tableView.rowHeight = UITableViewAutomaticDimension
-        tableView.estimatedRowHeight = 300
-
-        movieSearchService = MoviesSearchService()
-        try! movieSearchService?.search(forMovie: "batman", successCallback: { (viewmodels) in
-
-            self.movieViewModels = viewmodels
-            DispatchQueue.main.async {
-                self.tableView.reloadData()
-            }
-        }, errorCallback: { (error) in
-            print(error.localizedDescription)
-        })
+		
+		setUpSearchController()
+		setUpTableView()
+		getMovies_Test()
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -47,18 +31,54 @@ class MovieListViewController: UITableViewController, UISearchControllerDelegate
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        //force unwrapped as this would be a developer error
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! MovieTableViewCell
+		guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as? MovieTableViewCell else {
+			
+			fatalError("MovieTableViewCell in storyboard configured incorrectly")
+		}
 
         cell.configure(with: movieViewModels[indexPath.row])
-
         cell.layoutIfNeeded()
 
         return cell
     }
+	
+	// MARK: - private helpers
+	
+	private func setUpSearchController() {
+		
+		searchController = UISearchController(searchResultsController: RecentSearchesTableViewController())
+		searchController?.searchBar.sizeToFit()
+		tableView.tableHeaderView = searchController?.searchBar
+		searchController?.delegate = self
+		definesPresentationContext = true
+	}
+	
+	private func setUpTableView() {
+		
+		tableView.rowHeight = UITableViewAutomaticDimension
+		tableView.estimatedRowHeight = 100
+	}
+	
+	private func getMovies_Test() {
+		
+		movieSearchService = MoviesSearchService()
+		try! movieSearchService?.search(forMovie: "batman", successCallback: { (viewmodels) in
+			
+			self.movieViewModels = viewmodels
+			DispatchQueue.main.async {
+				self.tableView.reloadData()
+			}
+		}, errorCallback: { (error) in
+			
+			print(error.localizedDescription)
+		})
+	}
+}
 
-    func didPresentSearchController(_ searchController: UISearchController) {
-
-        searchController.searchResultsController?.view.isHidden = false
-    }
+extension MovieListViewController: UISearchControllerDelegate {
+	
+	func didPresentSearchController(_ searchController: UISearchController) {
+		
+		searchController.searchResultsController?.view.isHidden = false
+	}
 }
