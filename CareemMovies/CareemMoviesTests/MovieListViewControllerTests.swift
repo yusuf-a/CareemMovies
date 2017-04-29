@@ -93,11 +93,17 @@ class MovieListViewControllerTests: XCTestCase {
 		XCTAssertEqual(movieListViewController.tableView.estimatedRowHeight, 100)
 	}
 	
+	func test_viewDidLoad_searchControllerResultsUpdater_isMovieListViewController() {
+		
+		movieListViewController.viewDidLoad()
+		XCTAssert(movieListViewController.searchController?.searchResultsUpdater === movieListViewController)
+	}
+	
 	// MARK: - UISearchControllerDelegate
 	
 	func test_didPresentSearchController_searchController_viewNotHidden() {
 		
-		movieListViewController.didPresentSearchController(movieListViewController.searchController!)
+	movieListViewController.didPresentSearchController(movieListViewController.searchController!)
 		XCTAssertFalse(movieListViewController.searchController!.view.isHidden)
 	}
 }
