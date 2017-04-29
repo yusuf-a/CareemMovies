@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Siq-jV-Cyv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Siq-jV-Cyv">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -34,21 +34,21 @@
                                                 <constraint firstAttribute="width" secondItem="VT5-xC-pKR" secondAttribute="height" multiplier="1:1" id="fTH-Hh-E7L"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SZN-1u-jGE">
-                                            <rect key="frame" x="112" y="8" width="33.5" height="44.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SZN-1u-jGE">
+                                            <rect key="frame" x="113" y="8" width="42.5" height="26.5"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Release Date" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RmJ-Vx-9Xh">
-                                            <rect key="frame" x="108" y="48.5" width="100.5" height="20.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <rect key="frame" x="113" y="54.5" width="118" height="24"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overview" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4l3-3L-WgB">
-                                            <rect key="frame" x="112" y="79" width="255" height="20.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <rect key="frame" x="113" y="88.5" width="254" height="20.5"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -56,10 +56,10 @@
                                     <constraints>
                                         <constraint firstItem="RmJ-Vx-9Xh" firstAttribute="top" secondItem="SZN-1u-jGE" secondAttribute="bottom" constant="20" id="8AQ-Ol-tNP"/>
                                         <constraint firstAttribute="topMargin" secondItem="SZN-1u-jGE" secondAttribute="top" id="91l-pw-gk6"/>
-                                        <constraint firstItem="SZN-1u-jGE" firstAttribute="leading" secondItem="VT5-xC-pKR" secondAttribute="trailing" constant="4" id="Kpx-3c-BE4"/>
-                                        <constraint firstItem="RmJ-Vx-9Xh" firstAttribute="leading" secondItem="VT5-xC-pKR" secondAttribute="trailing" id="QbC-si-rgd"/>
+                                        <constraint firstItem="SZN-1u-jGE" firstAttribute="leading" secondItem="VT5-xC-pKR" secondAttribute="trailing" constant="5" id="Kpx-3c-BE4"/>
+                                        <constraint firstItem="RmJ-Vx-9Xh" firstAttribute="leading" secondItem="VT5-xC-pKR" secondAttribute="trailing" constant="5" id="QbC-si-rgd"/>
                                         <constraint firstItem="VT5-xC-pKR" firstAttribute="centerY" secondItem="SyS-ea-uNO" secondAttribute="centerY" id="VL3-gR-UGL"/>
-                                        <constraint firstItem="4l3-3L-WgB" firstAttribute="leading" secondItem="VT5-xC-pKR" secondAttribute="trailing" constant="4" id="W5A-yD-cvZ"/>
+                                        <constraint firstItem="4l3-3L-WgB" firstAttribute="leading" secondItem="VT5-xC-pKR" secondAttribute="trailing" constant="5" id="W5A-yD-cvZ"/>
                                         <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="4l3-3L-WgB" secondAttribute="bottom" id="e19-IJ-Bzs"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="4l3-3L-WgB" secondAttribute="trailing" id="odg-OM-1ub"/>
                                         <constraint firstItem="4l3-3L-WgB" firstAttribute="top" secondItem="RmJ-Vx-9Xh" secondAttribute="bottom" constant="10" id="s9Q-gi-cx8"/>
@@ -84,21 +84,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DLB-9c-DOF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2175" y="28"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Bar-z3-PrN">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ONT-zm-P3I" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="H59-YT-PEq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Gem-60-M5X" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="53.600000000000001" y="38.23088455772114"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="EPw-iF-9hb">
