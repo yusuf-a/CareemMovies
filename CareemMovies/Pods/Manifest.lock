@@ -1,0 +1,23 @@
+PODS:
+  - Gloss (1.2.4)
+  - Kingfisher (3.6.2)
+  - Realm (2.6.1):
+    - Realm/Headers (= 2.6.1)
+  - Realm/Headers (2.6.1)
+  - RealmSwift (2.6.1):
+    - Realm (= 2.6.1)
+
+DEPENDENCIES:
+  - Gloss (~> 1.2)
+  - Kingfisher (~> 3.0)
+  - RealmSwift
+
+SPEC CHECKSUMS:
+  Gloss: 4e036074610fdb993abcb958ebcd7332588e2333
+  Kingfisher: 2c94e72c6830622c71d06adf4ea024c37d316830
+  Realm: 9abfd4f87519376daa5ae3a4603155de408bf8b3
+  RealmSwift: a54d3e8931cf7d3afa5a1fac9c8f88109d7f02b3
+
+PODFILE CHECKSUM: 76e945b1d5089abcbada697ce8fced8534f292a6
+
+COCOAPODS: 1.2.0
