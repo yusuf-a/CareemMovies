@@ -82,6 +82,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="fa0-sF-cTp"/>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="alQ-KT-CdT">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </refreshControl>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DLB-9c-DOF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

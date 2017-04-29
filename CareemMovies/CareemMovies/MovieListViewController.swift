@@ -64,6 +64,18 @@ class MovieListViewController: UITableViewController {
 		
 		tableView.rowHeight = UITableViewAutomaticDimension
 		tableView.estimatedRowHeight = 100
+		refreshControl?.addTarget(self, action: #selector(refreshView), for: .valueChanged)
+	}
+	
+	@objc private func refreshView() {
+		
+		refreshControl?.beginRefreshing()
+		
+		if currentSearchTerm.isEmpty {
+			
+			refreshControl?.endRefreshing()
+			return }
+		getMovies(for: currentSearchTerm)
 	}
 	
 	internal func getMovies(for searchTerm: String) {
@@ -80,9 +92,9 @@ class MovieListViewController: UITableViewController {
 					
 					self.tableView.reloadData()
 					self.handleResults()
+					self.refreshControl?.endRefreshing()
 				}
 			}, errorCallback: { (_) in
-				
 				self.showErrorAlert()
 			})
 			
@@ -116,7 +128,9 @@ class MovieListViewController: UITableViewController {
 		let action = UIAlertAction(title: "Ok", style: .default, handler: nil)
 		alertController.addAction(action)
 		
-		present(alertController, animated: true, completion: nil)
+		present(alertController, animated: true) { 
+			self.refreshControl?.endRefreshing()
+		}
 	}
 }
 
