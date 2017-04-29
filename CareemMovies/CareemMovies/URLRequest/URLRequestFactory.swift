@@ -26,13 +26,6 @@ enum ContentType: String {
 	case tv = "tv"
 }
 
-enum Strings {
-	
-	static let apiKeyKey = "api_key"
-	static let apiKeyValue = "2696829a81b1b5827d515ff121700838"
-	static let baseURL = "http://api.themoviedb.org/3"
-}
-
 class DefaultURLRequestFactory: URLRequestFactory {
 	
 	func makeURLRequest(withPath path: String, httpParams: [[String: String]]) -> URLRequest? {

@@ -84,15 +84,15 @@ class MovieListViewController: UITableViewController {
 		
 		do {
 			
-			try movieSearchService.search(forMovie: searchTerm, successCallback: { (viewmodels) in
+			try movieSearchService.search(forMovie: searchTerm, successCallback: { [weak self](viewmodels) in
 				
-				self.movieViewModels = viewmodels
+				self?.movieViewModels = viewmodels
 				
 				DispatchQueue.main.async {
 					
-					self.tableView.reloadData()
-					self.handleResults()
-					self.refreshControl?.endRefreshing()
+					self?.tableView.reloadData()
+					self?.handleResults()
+					self?.refreshControl?.endRefreshing()
 				}
 			}, errorCallback: { (_) in
 				self.showErrorAlert()
@@ -106,7 +106,7 @@ class MovieListViewController: UITableViewController {
 	
 	private func showErrorAlert() {
 		
-		showAlertView(withTitle: "Uh oh! An error occurred", message: "Please try again later")
+		showAlertView(withTitle: Strings.errorAlertTitle, message: Strings.errorAlertMessage)
 	}
 	
 	private func handleResults() {
@@ -115,7 +115,7 @@ class MovieListViewController: UITableViewController {
 		
 		if movieViewModels.isEmpty {
 			
-			showAlertView(withTitle: "Uh oh! No results", message: "Please search again with a different movie")
+			showAlertView(withTitle: Strings.noResultsAlertTitle, message: Strings.noResultsAlertMessage)
 		} else {
 			
 			recentSearchesManager.addRecentSearch(withSearchterm: currentSearchTerm)
