@@ -16,7 +16,7 @@ protocol RecentSearchesTableViewControllerDelegate {
 class RecentSearchesTableViewController: UITableViewController {
 
     var delegate: RecentSearchesTableViewControllerDelegate?
-	let recentSearchesManager = RecentSearchesManager()
+	var recentSearchesManager = RecentSearchesManager()
 	var recentSearches = [RecentSearchViewModel]()
 
 	override func viewDidAppear(_ animated: Bool) {
@@ -33,7 +33,7 @@ class RecentSearchesTableViewController: UITableViewController {
 
         let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
 
-        cell.textLabel!.text = recentSearches[indexPath.row].searchTerm
+        cell.textLabel?.text = recentSearches[indexPath.row].searchTerm
 
         return cell
     }

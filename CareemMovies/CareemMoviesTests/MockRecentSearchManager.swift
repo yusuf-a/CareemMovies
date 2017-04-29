@@ -13,9 +13,17 @@ import Foundation
 class MockRecentSearchManager: RecentSearchesManager {
 	
 	var addRecentSearchWasCalled = false
+	var fetchRecentSearchesWasCalled = false
 	
 	override func addRecentSearch(withSearchterm searchTerm: String) {
 		
 		addRecentSearchWasCalled = true
+	}
+	
+	override func fetchRecentSearches() -> [RecentSearchViewModel] {
+		
+		fetchRecentSearchesWasCalled = true
+		
+		return [RecentSearchViewModel(searchTerm: "")]
 	}
 }
