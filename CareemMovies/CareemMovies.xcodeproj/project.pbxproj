@@ -24,6 +24,7 @@
 		88D3265F1EB2A52D008D3E68 /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D3265E1EB2A52D008D3E68 /* MovieViewModel.swift */; };
 		88D326621EB2A8EB008D3E68 /* String+DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D326611EB2A8EB008D3E68 /* String+DateFormat.swift */; };
 		88D326651EB2A913008D3E68 /* String+DateFormatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D326641EB2A913008D3E68 /* String+DateFormatTests.swift */; };
+		88D3266B1EB2B233008D3E68 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D3266A1EB2B233008D3E68 /* MovieTableViewCell.swift */; };
 		88ED3B391EAFD1ED00391075 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ED3B381EAFD1ED00391075 /* Movie.swift */; };
 		88ED3B3D1EAFDE2400391075 /* MovieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ED3B3C1EAFDE2400391075 /* MovieTests.swift */; };
 		88ED3B401EAFDEA800391075 /* Movie.json in Resources */ = {isa = PBXBuildFile; fileRef = 88ED3B3F1EAFDEA800391075 /* Movie.json */; };
@@ -37,6 +38,10 @@
 		88ED3B551EB0F08D00391075 /* URLRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ED3B541EB0F08D00391075 /* URLRequestFactory.swift */; };
 		88ED3B581EB0F0A400391075 /* MoviesURLRequestFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ED3B571EB0F0A400391075 /* MoviesURLRequestFactoryTests.swift */; };
 		B45D4AFA5B0BBEF3169D49CA /* Pods_CareemMovies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C67F1B8B227E2B39C8944B2 /* Pods_CareemMovies.framework */; };
+		E81B152D1EB33FA9009D4FC8 /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B152C1EB33FA9009D4FC8 /* MovieListViewController.swift */; };
+		E81B15301EB33FF8009D4FC8 /* MovieListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B152F1EB33FF8009D4FC8 /* MovieListViewControllerTests.swift */; };
+		E81B15321EB3480D009D4FC8 /* MockMovieSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B15311EB3480D009D4FC8 /* MockMovieSearchService.swift */; };
+		E81B15341EB36DF8009D4FC8 /* RecentSearchesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81B15331EB36DF8009D4FC8 /* RecentSearchesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +79,7 @@
 		88D3265E1EB2A52D008D3E68 /* MovieViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
 		88D326611EB2A8EB008D3E68 /* String+DateFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+DateFormat.swift"; sourceTree = "<group>"; };
 		88D326641EB2A913008D3E68 /* String+DateFormatTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+DateFormatTests.swift"; sourceTree = "<group>"; };
+		88D3266A1EB2B233008D3E68 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		88ED3B381EAFD1ED00391075 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		88ED3B3C1EAFDE2400391075 /* MovieTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTests.swift; sourceTree = "<group>"; };
 		88ED3B3F1EAFDEA800391075 /* Movie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Movie.json; sourceTree = "<group>"; };
@@ -88,6 +94,10 @@
 		88ED3B571EB0F0A400391075 /* MoviesURLRequestFactoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesURLRequestFactoryTests.swift; sourceTree = "<group>"; };
 		BCA29C356277DFCCD8180789 /* Pods-CareemMovies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareemMovies.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CareemMovies/Pods-CareemMovies.debug.xcconfig"; sourceTree = "<group>"; };
 		CFAA2461CD99C58E9BFF6016 /* Pods-CareemMovies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareemMovies.release.xcconfig"; path = "Pods/Target Support Files/Pods-CareemMovies/Pods-CareemMovies.release.xcconfig"; sourceTree = "<group>"; };
+		E81B152C1EB33FA9009D4FC8 /* MovieListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
+		E81B152F1EB33FF8009D4FC8 /* MovieListViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListViewControllerTests.swift; sourceTree = "<group>"; };
+		E81B15311EB3480D009D4FC8 /* MockMovieSearchService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockMovieSearchService.swift; sourceTree = "<group>"; };
+		E81B15331EB36DF8009D4FC8 /* RecentSearchesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentSearchesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +154,7 @@
 		8867D6FF1EA91D3B00619304 /* CareemMovies */ = {
 			isa = PBXGroup;
 			children = (
+				88D326661EB2B12C008D3E68 /* View */,
 				88D3265D1EB2A51F008D3E68 /* ViewModels */,
 				88D326561EB2913E008D3E68 /* Common */,
 				88ED3B531EB0F07800391075 /* URLRequest */,
@@ -163,6 +174,7 @@
 		8867D7141EA91D3B00619304 /* CareemMoviesTests */ = {
 			isa = PBXGroup;
 			children = (
+				E81B152E1EB33FEC009D4FC8 /* Views */,
 				88D326631EB2A8F1008D3E68 /* Extensions */,
 				88D326531EB2903E008D3E68 /* MoviesService */,
 				88ED3B561EB0F09400391075 /* URLRequest */,
@@ -213,6 +225,24 @@
 				88D326641EB2A913008D3E68 /* String+DateFormatTests.swift */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		88D326661EB2B12C008D3E68 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				88D326691EB2B21C008D3E68 /* Cell */,
+				E81B152C1EB33FA9009D4FC8 /* MovieListViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		88D326691EB2B21C008D3E68 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				88D3266A1EB2B233008D3E68 /* MovieTableViewCell.swift */,
+				E81B15331EB36DF8009D4FC8 /* RecentSearchesTableViewController.swift */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 		88ED3B371EAFD17500391075 /* API */ = {
@@ -275,6 +305,7 @@
 				88727AEA1EB2872400CFDF80 /* MockURLRequestFactory.swift */,
 				88D326591EB29F79008D3E68 /* MockHTTPService.swift */,
 				88D3265B1EB2A030008D3E68 /* MockMovieSearchHTTPRequestFactory.swift */,
+				E81B15311EB3480D009D4FC8 /* MockMovieSearchService.swift */,
 			);
 			name = Mocks;
 			sourceTree = "<group>";
@@ -312,6 +343,14 @@
 				532AEBBBFAC54FE1A967038F /* Pods_CareemMoviesTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E81B152E1EB33FEC009D4FC8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E81B152F1EB33FF8009D4FC8 /* MovieListViewControllerTests.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -370,7 +409,7 @@
 				TargetAttributes = {
 					8867D6FC1EA91D3B00619304 = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = 328NMJG8VD;
+						DevelopmentTeam = X9MH6J74VN;
 						ProvisioningStyle = Automatic;
 					};
 					8867D7101EA91D3B00619304 = {
@@ -523,6 +562,7 @@
 				88ED3B491EAFE52800391075 /* HTTPService.swift in Sources */,
 				88D3265F1EB2A52D008D3E68 /* MovieViewModel.swift in Sources */,
 				8867D7031EA91D3B00619304 /* ViewController.swift in Sources */,
+				E81B152D1EB33FA9009D4FC8 /* MovieListViewController.swift in Sources */,
 				88727AE71EB2848C00CFDF80 /* MovieSearchHTTPRequestFactory.swift in Sources */,
 				8867D7011EA91D3B00619304 /* AppDelegate.swift in Sources */,
 				88D326621EB2A8EB008D3E68 /* String+DateFormat.swift in Sources */,
@@ -531,6 +571,8 @@
 				88D326521EB29037008D3E68 /* MoviesSearchService.swift in Sources */,
 				88D326581EB29149008D3E68 /* BlockTypeAlias.swift in Sources */,
 				88ED3B391EAFD1ED00391075 /* Movie.swift in Sources */,
+				E81B15341EB36DF8009D4FC8 /* RecentSearchesTableViewController.swift in Sources */,
+				88D3266B1EB2B233008D3E68 /* MovieTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,6 +580,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E81B15301EB33FF8009D4FC8 /* MovieListViewControllerTests.swift in Sources */,
 				88ED3B3D1EAFDE2400391075 /* MovieTests.swift in Sources */,
 				88D326551EB2904C008D3E68 /* MoviesSearchServiceTests.swift in Sources */,
 				88ED3B4C1EAFE53E00391075 /* HTTPServiceTests.swift in Sources */,
@@ -545,6 +588,7 @@
 				88727AE91EB286A300CFDF80 /* MovieSearchHTTPRequestFactoryTests.swift in Sources */,
 				88ED3B441EAFE28D00391075 /* MoviesTests.swift in Sources */,
 				88D3265A1EB29F79008D3E68 /* MockHTTPService.swift in Sources */,
+				E81B15321EB3480D009D4FC8 /* MockMovieSearchService.swift in Sources */,
 				88727AEB1EB2872400CFDF80 /* MockURLRequestFactory.swift in Sources */,
 				88D3265C1EB2A030008D3E68 /* MockMovieSearchHTTPRequestFactory.swift in Sources */,
 				88ED3B511EB0ED2E00391075 /* MockURLSessionDataTask.swift in Sources */,
@@ -681,7 +725,7 @@
 			baseConfigurationReference = BCA29C356277DFCCD8180789 /* Pods-CareemMovies.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 328NMJG8VD;
+				DEVELOPMENT_TEAM = X9MH6J74VN;
 				INFOPLIST_FILE = CareemMovies/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yusuf.CareemMovies;
@@ -695,7 +739,7 @@
 			baseConfigurationReference = CFAA2461CD99C58E9BFF6016 /* Pods-CareemMovies.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 328NMJG8VD;
+				DEVELOPMENT_TEAM = X9MH6J74VN;
 				INFOPLIST_FILE = CareemMovies/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yusuf.CareemMovies;

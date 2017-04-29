@@ -5,6 +5,7 @@ use_frameworks!
 target 'CareemMovies' do
 
   pod 'Gloss', '~> 1.2'
+  pod 'Kingfisher', '~> 3.0'
 
   target 'CareemMoviesTests' do
     inherit! :search_paths

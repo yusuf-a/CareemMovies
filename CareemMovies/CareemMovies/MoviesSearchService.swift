@@ -18,7 +18,7 @@ class MoviesSearchService: MoviesServiceInterface {
 	let moviesSearchHTTPRequestFactory: MovieSearchHTTPRequestFactory
 	let httpService: HTTPService
 	
-	init(moviesSearchHTTPRequestFactory: MovieSearchHTTPRequestFactory, httpService: HTTPService) {
+    init(moviesSearchHTTPRequestFactory: MovieSearchHTTPRequestFactory = MovieSearchHTTPRequestFactory(urlRequestFactory: DefaultURLRequestFactory()), httpService: HTTPService = HTTPService()) {
 		
 		self.moviesSearchHTTPRequestFactory = moviesSearchHTTPRequestFactory
 		self.httpService = httpService
